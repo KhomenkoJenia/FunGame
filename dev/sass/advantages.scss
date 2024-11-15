@@ -1,0 +1,50 @@
+.advantages {
+	margin-bottom: $section-margin-bottom;
+	.container-fluid {
+		max-width: 1140px;
+	}
+}
+
+.advantage {
+	text-align: center;
+	margin-bottom: 58px;
+
+	&-img {
+		position: relative;
+		margin: 0 auto 22px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 93px;
+		height: 93px;
+		border-radius: 50%;
+		background-color: rgb(96, 48, 121);
+		object-fit: scale-down;
+		padding: 15px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			max-width: 113px;
+			min-width: 113px;
+			width: 100%;
+			height: 113px;
+			border-radius: 50%;
+			border: 1px solid #a56dc3;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	&-img:hover {
+		background-color: rgb(21, 74, 220);
+		transition: 0.9s;
+	}
+	&-title {
+		font-size: 18px;
+		line-height: 124.5%;
+	}
+}
+#slider-advantage {
+	margin: 90px 0 -58px;
+}

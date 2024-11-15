@@ -1,0 +1,101 @@
+header {
+	padding: 10px 30px;
+	background-color: rgba(85, 38, 106, 0.944);
+
+	.nav-link {
+		color: $text;
+		font-weight: bold;
+		font-size: 20px;
+		font-family: "LilitaOne";
+		padding: 10px 20px;
+
+		&:hover {
+			color: $secondary-color;
+			transition: 0.9s;
+
+			border-radius: 40px;
+		}
+	}
+	.dropdown-toggle::after {
+		vertical-align: 0.1em;
+	}
+
+	.navbar-nav {
+		margin: 0 auto;
+		background-color: rgba(59, 127, 204, 0.354);
+		border-radius: 40px;
+		padding: 0 20px;
+	}
+
+	ul.dropdown-menu.show {
+		background-color: rgba(59, 127, 204, 0.579);
+		padding: 10px;
+	}
+	.dropdown-item {
+		text-align: center;
+		margin-bottom: 5px;
+		color: white;
+		font-family: "LilitaOne";
+	}
+	.navbar {
+		padding: 0;
+	}
+
+	.header-logo {
+		display: inline-block;
+	}
+
+	.navbar-toggler {
+		width: 40px;
+		height: 40px;
+		position: relative;
+
+		&:focus {
+			box-shadow: none;
+		}
+
+		span,
+		span:before,
+		span:after {
+			cursor: pointer;
+			border-radius: 1px;
+			height: 2px;
+			width: 35px;
+			background: white;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			display: block;
+			content: "";
+		}
+
+		span:before {
+			top: -10px;
+		}
+
+		span:after {
+			top: 10px;
+		}
+
+		span,
+		span:before,
+		span:after {
+			transition: all 0.5s ease-in-out;
+		}
+		&[aria-expanded="true"] {
+			span {
+				background-color: transparent;
+			}
+			span:before,
+			span:after {
+				top: 0;
+			}
+			span:before {
+				transform: rotate(135deg);
+			}
+			span:after {
+				transform: rotate(-135deg);
+			}
+		}
+	}
+}

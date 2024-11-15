@@ -1,0 +1,32 @@
+.about-company {
+	padding: $section-padding;
+	display: flex;
+	margin: auto;
+
+	img {
+		max-width: 450px;
+		border-radius: 20px;
+	}
+	button {
+		margin-top: 30px;
+		margin-bottom: 20px;
+		margin-left: 30px;
+	}
+
+	&__text {
+		margin-right: 25px;
+	}
+
+	&__subtitle {
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 170%;
+		font-family: "SourGummy";
+	}
+	.about-box {
+		display: flex;
+		margin-top: 91px;
+		margin-bottom: 50px;
+		padding: 0 200px;
+	}
+}
